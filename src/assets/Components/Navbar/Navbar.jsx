@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../../../Media/sripada logo2.png';
-import { Link as RouterLink, useLocation } from 'react-router-dom'; // Import useLocation
+import { Link as RouterLink, useLocation } from 'react-router-dom'; 
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const location = useLocation(); // Get current location
+    const location = useLocation(); 
 
     const toggleMenu = () => {
         setMenu(!menu);
@@ -40,8 +40,8 @@ const Navbar = () => {
                         <RouterLink to="/courses" className={location.pathname === "/courses" ? "active" : ""}>Courses</RouterLink>
                         
                     </li>
-                    {/* 
-                    <li>
+                    
+                  {/*   <li>
                         <RouterLink to="/jobupdates" className={location.pathname === "/jobupdates" ? "active" : ""}>Job Updates</RouterLink>
                     </li>
                     <li>

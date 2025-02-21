@@ -21,22 +21,22 @@ import { Link as RouterLink } from 'react-router-dom';
 
 const Courses = () => {
   const courses = [
-    { image: html, title: 'HTML', link: '/html' },
-    { image: css, title: 'CSS', link: '/css' },
-    { image: JavaScript, title: 'JavaScript', link: '/javascript' },
-    { image: c, title: 'C Programming', link: '/c-programming' },
-    { image: python, title: 'Java Development', link: '/java-development' },
-    { image: java, title: 'Python', link: '/python' },
-    { image: sql, title: 'SQL', link: '/sql' },
-    { image: mysql, title: 'MySQL', link: '/mysql' },
-    { image: cpp, title: 'C++', link: '/cpp' },
-    { image: csharp, title: 'C#', link: '/csharp' },
-    { image: php, title: 'PHP', link: '/php' },
-    { image: react, title: 'React', link: '/react' },
-    { image: node, title: 'Node', link: '/node' },
-    { image: express, title: 'Express', link: '/express' },
-    { image: cybersecurity, title: 'Cyber Security', link: '/cybersecurity' },
-    { image: dataanalytics, title: 'Data Analytics', link: '/data-analytics' },
+    { image: html, title: 'HTML', link: '/courses' },
+    { image: css, title: 'CSS', link: '/courses' },
+    { image: JavaScript, title: 'JavaScript', link: '/courses' },
+    { image: c, title: 'C Programming', link: '/courses' },
+    { image: python, title: 'Java Development', link: '/courses' },
+    { image: java, title: 'Python', link: '/courses' },
+    { image: sql, title: 'SQL', link: '/courses' },
+    { image: mysql, title: 'MySQL', link: '/courses' },
+    { image: cpp, title: 'C++', link: '/courses' },
+    { image: csharp, title: 'C#', link: '/courses' },
+    { image: php, title: 'PHP', link: '/courses' },
+    { image: react, title: 'React', link: '/courses' },
+    { image: node, title: 'Node', link: '/courses' },
+    { image: express, title: 'Express', link: '/courses' },
+    { image: cybersecurity, title: 'Cyber Security', link: '/courses' },
+    { image: dataanalytics, title: 'Data Analytics', link: '/courses' },
   ];
 
   const [showForm, setShowForm] = useState(false);
@@ -54,7 +54,7 @@ const Courses = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch('https://api.web3forms.com/submit', { // Replace with your actual endpoint
+    fetch('https://api.web3forms.com/submit', { 
       method: 'POST',
       body: new FormData(event.target),
     })

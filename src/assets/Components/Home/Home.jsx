@@ -78,7 +78,7 @@ const Home = () => {
 
   return (
     <div className="homepage">
-      {/* Image Slider */}
+      {/* Image slidiong code here  */}
       <div className="slider">
         <img src={slides[currentSlide]} alt="Active slide placeholder" className="slider-placeholder" />
         {slides.map((slide, index) => (
@@ -94,22 +94,25 @@ const Home = () => {
         </div>
       </div>
 
-      {/* About Section */}
+      {/* About the company code, description of the company   */}
       <div className="about-company">
-        <h3>Best Software Training Institute in Hyderabad</h3>
+        
         <h2>SriPada Techno Soft</h2>
+        <h3>Is a Training and Software development company</h3>
         <div className="about-content">
           <div className="about-image-container">
             <img src={homeimage} alt="About Us" className="about-image" />
           </div>
           <div className="about-text">
             <p>
-              We are a leading EdTech company providing courses in various programming languages like C, Java, Python, and more.
+              We are a providing Software training for various courses company providing courses in various programming languages like C, Java, Python, and more.
               Our mission is to help you learn and master new skills while offering job placement assistance to ensure you're
               ready for the workforce.
             </p>
           </div>
-                {/* Mission, Vision, and Referral Program Section (Updated Format) */}
+
+
+    {/* Some other details of the company */}
       <section className="mission-vision-referral">
         <div className="mvr-list">
           <div className="mvr">
@@ -142,8 +145,9 @@ const Home = () => {
       </section>
         </div>
       </div>
+      
 
-    {/* Courses Section */}
+    {/* Course details */}
 <section className="courses">
   <h2>Top Courses</h2>
   <hr className='whyhr'></hr>

@@ -10,7 +10,7 @@
 }
 .course-top
 {
-    padding: 90px 10px 0px;
+    padding: 100px 10px 0px;
     margin-top: 12px;
 }
 .course-section {
@@ -374,5 +374,8 @@ text-align: left;
     }
     .course-division{
       gap: 10px
+    }
+    .course-top{
+      padding : 70px 2px 0px;
     }
   }

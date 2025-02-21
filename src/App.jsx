@@ -10,16 +10,15 @@ import Internship from './assets/Components/Internship/Internship';
 
 const App = () => {
     return (
-        <Router> {/* Wrap your app with the Router */}
+        <Router> 
             <div>
                 <Navbar />
-                <Routes> {/* Use Routes to define your routes */}
-                    <Route path="/" element={<Home />} /> {/* Route for Home */}
+                <Routes> 
+                    <Route path="/" element={<Home />} /> 
                     <Route path="/courses" element={<Courses />}/>
                     <Route path="/contactus" element={<ContactUs />}/>
                     <Route path="/jobupdates" element={<JobUpdates />}/>
                     <Route path="/internship" element={<Internship />}/>
-                    {/* Add more routes as needed */}
                 </Routes>
                 <Footer />
             </div>

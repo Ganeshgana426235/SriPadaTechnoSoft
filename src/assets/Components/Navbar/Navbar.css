@@ -189,6 +189,9 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
+  .Navbar {
+  height: 80px;
+  }
   .menubar {
     display: none;
   }
@@ -201,7 +204,11 @@
   .menu-list .dropdown-content {
     display: none;
   }
-
+  .nav-img {
+    margin-left: 20px;
+    width: 110px;
+    height: auto;
+  }
   .menu-list .dropdown:hover .dropdown-content {
     display: block;
   }
